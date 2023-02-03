@@ -2,3 +2,6 @@ decision problem - function with one-bit output, "yes" or "no".
 - to specify a decision problem, one must specify:
   - the set A of possible inputs.
   - the subset B \subseteq A of "yes" instances.
+- examples:
+  - if graph is connected (set of possible inputs = set of all graphs, "yes" instances are connected graphs).
+  - if number is prime (set of possible inputs = set of all integers, "yes" instances are primes).
