@@ -1,1 +1,4 @@
-
+decision problem - function with one-bit output, "yes" or "no".
+- to specify a decision problem, one must specify:
+  - the set A of possible inputs.
+  - the subset B \subseteq A of "yes" instances.
