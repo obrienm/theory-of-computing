@@ -1,1 +1,28 @@
-
+abstraction: take the set of possible inputs to a decision problem to be the set of finite-length strings over some fixed finite alphabet.
+alphabet - any finite set. ex: {0, 1, 2, ..., 9} for decimals; the set of all ASCII characters for text; {0, 1} for bit strings. *denoted by sigma.
+  - elements of alphabets are called letters or symbols denoted by a, b, c, ...
+a string over an alphabet is any finite-length sequence of elements of the alphabet. ex: {a, b}, "aabab" is a string over the alphabet of length five.
+  - x, y, z, ... to refer to strings.
+the length of a string x is the number of symbols in x, denoted by |x|.
+null/empty string over an alphabet is a string of length 0, denoted by epsilon. |e| = 0.
+a^n is written for a string of a's of length n; a^5 = aaaaa; a^1 = a, a^0 = e.
+  - a^0 (def)= e,
+  - a^n+1 (def)= a(^n)a
+the set of all strings over an alphabet (E) is denoted as E*.
+  - ex: {a, b}* = {e, a, b, aa, ab, ba, bb, aaa, aab, ...}.
+  - ex: {a}* = {e, a, aa, aaa, aaaa, ...} = {a^n | n >= 0}.
+by convention, empty set* (def)= {e}.
+if an alphabet (E) is unempty, then E* is an infinite set of finite-length strings.
+  - {a, b} = {b, a}; ab != ba.
+  - {a, a, b} = {a, b}; aab != ab.
+concatenation - takes two strings, x and y, and makes a new string, xy, by putting them together end-to-end.
+  - concatenation is associative: (xy)z = x(yz)
+  - null string, e, is an identity for concatenation: ex = xe = x.
+  - |xy| = |x| + |y|
+monoid - algebraic structure consisting of a set with an associative binary operation and an identity for that operation.
+if a \in E and x \in E*, we write #a(x) for the number of a's in x.
+prefix - an initial substring of a string x; a string y, for which there exists a string z such that x = yz.
+  - ex: abaab is a prefix of abaababa.
+  - the null string is a prefix of every string.
+  - every string is a prefix of itself.
+  - a prefix y of x is a proper prefix of x if y
