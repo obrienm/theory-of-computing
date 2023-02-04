@@ -1,0 +1,49 @@
+Sets of strings are denoted as A, B, C, ...
+cardinality of set A is denoted as |A|.
+  - the empty set is the unique set of cardinality 0.
+set union - A \cup B (def)= {x | x \in A or x \in B}
+  - x is in intersection of A and B iff x is in both A and B.
+  - ex: {a, ab} \cap {ab, aab} = {ab}.
+complement in E* - ~A (def)= {x \in E* | x \notin A}.
+  - ex: ~{strings in E* of even length} = {strings in E* in odd length}.
+~A is sometimes denoted as E* - A.
+set concatenation - AB (def)= {xy | x \in A and y \in B}.
+  - z is in AB iff z can be written as a concatenation of two strings x and y, where x \in A and y \in B.
+  - ex: {a, ab}{b, ba} = {ab, aba, abb, abba}.
+  - AB and BA are different sets.
+powers of A^n:
+  - A^0 (def)= {e},
+  - A^n+1 (def)= AA^n.
+  - {ab, aab}^0 = {e},
+  - {ab, aab}^1 = {ab, aab},
+  - {ab, aab}^2 = {abab, abaab, aabab, aabaab}.
+  - {a, b}^n = {x \in {a, b}* | |x| = n}.
+    - = {strings over {a, b} of length n}.
+the asterate A* of a set A is the union of all finite powers of A:
+  - A* (def)= \cup (n >= 0) A^n
+  - = A^0 \cup A^1 \cup A^2 \cup A^3 \cup ...
+  - = A* = {x_1x_2...x_n | n >= 0 and x_i \in A, 1 <= i <= n}.
+  - n can be 0, so the null string, e, is in A* for any A.
+  - E* is the set of all finite-length strings over the alphabet, E -- the asterate of the set E.
+A^+ is the union of all nonzero powers of A:
+  - A^+ (def)= AA* = \cup (n >= 1) A^n.
+set union, set intersection, and set concatenation are all associative:
+  - (A \cup B) \cup C = A \cup (B \cup C)
+  - (A \cap B) \cap C = A \cap (B \cap C)
+  - (AB)C = A(BC)
+set union and set intersection are commutative:
+  - A \cup B = B \cup A
+  - A \cap B = B \cap A
+the null set is an identity for \cup:
+  - A \cup null set = null set \cup A = A.
+the set {e} is an identity for set concatenation:
+  - {e}A = A{e} = A.
+the null set is an annihilator for set concatenation:
+  - A(null set) = (null set)A = (null set)
+set union and intersection distribute over each other:
+  - A \cup (B \cap C) = (A \cup B) \cap (A \cup C)
+  - A \cap (B \cup C) = (A \cap B) \cup (A \cap C)
+set concatenation distributes over union:
+  - A(B \cup C) = AB \cup AC
+  - (A \cup B)C = AC \cup BC
+concatenation distributes over the union of any family of sets.
