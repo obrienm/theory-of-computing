@@ -25,4 +25,4 @@ prefix - an initial substring of a string x; a string y, for which there exists 
   - ex: abaab is a prefix of abaababa.
   - the null string is a prefix of every string.
   - every string is a prefix of itself.
-  - a prefix y of x is a proper prefix of x if y
+  - a prefix y of x is a proper prefix of x if y != e and y != x.
